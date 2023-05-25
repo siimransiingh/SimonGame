@@ -5,7 +5,6 @@ var userClickedPattern =[];
 var started = false;
 var level = 0;
 
-
 function checkAnswer(currentLevel) {
     if (gamePattern[currentLevel]=== userClickedPattern[currentLevel]) {
         console.log("success");
@@ -53,7 +52,7 @@ $("#level-title").text("level " + level);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
 
-  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+  $("#" + randomChosenColour).fadeIn(100).fadeOut(300).fadeIn(100);
   playSound(randomChosenColour);
 }
 function playSound(name) {
